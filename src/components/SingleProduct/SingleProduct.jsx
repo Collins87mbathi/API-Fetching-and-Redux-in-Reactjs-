@@ -1,11 +1,11 @@
 import React from 'react'
 import Rating from '@mui/material/Rating';
-import { useDispatch } from 'react-redux';
-import { addProduct } from '../../Redux/reducers/product.reducer';
+// import { useDispatch } from 'react-redux';
+// import { addProduct } from '../../Redux/reducers/product.reducer';
 
 const SingleProduct = ({prod}) => {
-    const {id,title,description,price,category,image,rating} = prod;
-    const [value, setValue] = React.useState(rating.rate);
+    const {title,price,category,image,rating} = prod;
+    const [value] = React.useState(rating.rate);
     // const dispatch = useDispatch(); 
   return (
     <>

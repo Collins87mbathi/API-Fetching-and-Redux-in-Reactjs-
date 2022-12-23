@@ -2,7 +2,7 @@ import React from 'react'
 import cart from "./purchase.png"
 import search from "./find.png"
 import { useNavigate} from "react-router-dom"
-import {useSelector} from "react-redux"
+// import {useSelector} from "react-redux"
 
 const Navbar = () => {
   // const products = useSelector((state)=> state.products.quantity);

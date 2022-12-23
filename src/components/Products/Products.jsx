@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 // import { fetchProducts } from "../../actions/product.action";
 import SingleProduct from "../SingleProduct/SingleProduct";
 import { fetchAllProducts } from "../../Redux/reducers/product.reducer";
@@ -21,7 +21,7 @@ const Products = () => {
     return () => {
       isMounted = false;
     };
-  }, []);
+  }, [dispatch]);
 
   if(error!==null){
     return <p className="text-red-500 text-2xl">An arror occured</p>
